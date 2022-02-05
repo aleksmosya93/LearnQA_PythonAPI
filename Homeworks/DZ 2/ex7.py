@@ -15,13 +15,13 @@ response3 = requests.post("https://playground.learnqa.ru/ajax/api/compare_query_
 
 print(response3.text + "\n")
 
-print("---------HTTP-запрос---------")
-
-params_list = ["get", "post", "put", "delete"]
-method_list = [{"method": "GET"}, {"method": "POST"}, {"method": "PUT"}, {"method": "DELETE"}]
-
-for i in method_list:
-    for param in params_list:
-        response4 = requests.i("https://playground.learnqa.ru/ajax/api/compare_query_type", params=param)
-        if response4.starus_code == 200:
-            print(f"method {i} with parameter params = {param} has following result {response4.result} with status code {response4.starus_code}")
+# print("---------HTTP-запрос---------")
+#
+# params_list = ["get", "post", "put", "delete"]
+# method_list = [{"method": "GET"}, {"method": "POST"}, {"method": "PUT"}, {"method": "DELETE"}]
+#
+# for i in params_list:
+#     for method in method_list:
+#         response4 = requests.i("https://playground.learnqa.ru/ajax/api/compare_query_type", params=param)
+#         if response4.starus_code == 200:
+#             print(f"method {i} with parameter params = {param} has following result {response4.result} with status code {response4.starus_code}")
