@@ -1,5 +1,18 @@
 import requests
 
+print("---------HTTP-запрос любого типа без параметра method---------")
+response1 = requests.get("https://playground.learnqa.ru/ajax/api/compare_query_type")
+print(response1.text + "\n")
+
+print("---------HTTP-запрос не из списка---------")
+response2 = requests.head("https://playground.learnqa.ru/ajax/api/compare_query_type", params={'method': 'HEAD'})
+print(response2.text + "\n")
+
+print("---------HTTP-запрос с правильным значением method---------")
+response3 = requests.post("https://playground.learnqa.ru/ajax/api/compare_query_type", data={'method': 'POST'})
+print(response3.text + "\n")
+
+print("---------HTTP-запрос на перебор методов---------")
 method_list = [{"method": "GET"}, {"method": "POST"},
                {"method": "PUT"}, {"method": "DELETE"}]
 
