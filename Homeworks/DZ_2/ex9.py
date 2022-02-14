@@ -1,4 +1,3 @@
-import password as password
 import requests
 
 login = 'super_admin'
