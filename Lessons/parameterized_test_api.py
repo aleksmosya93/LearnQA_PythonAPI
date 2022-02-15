@@ -26,4 +26,4 @@ class TestFirstApi:
             expected_response_text = f"Hello, {name}"
 
         actual_response_text = response_dict['answer']
-        assert actual_response_text == expected_response_text, "Actual text in the response is not corrext"
+        assert actual_response_text == expected_response_text, "Actual text in the response is not correct"
