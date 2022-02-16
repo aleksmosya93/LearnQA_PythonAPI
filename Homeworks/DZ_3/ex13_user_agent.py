@@ -29,10 +29,10 @@ class TestUserAgent:
         actual_browser = response_dict['browser']
         actual_device = response_dict['device']
 
-        exected_platform = expected_value['platform']
+        expected_platform = expected_value['platform']
         expected_browser = expected_value['browser']
         expected_device = expected_value['device']
 
-        assert actual_platform == exected_platform, f"Actual platform '{actual_platform}' not equal expected platform {exected_platform}"
-        assert actual_browser == expected_browser, f"Actual browser '{actual_browser}' not equal expected browser {expected_browser}"
-        assert actual_device == expected_device, f"Actual device '{actual_device}' not equal expected device {expected_device}"
+        assert actual_platform == expected_platform, f"Actual platform '{actual_platform}' not equal expected platform '{expected_platform}'"
+        assert actual_browser == expected_browser, f"Actual browser '{actual_browser}' not equal expected browser '{expected_browser}'"
+        assert actual_device == expected_device, f"Actual device '{actual_device}' not equal expected device '{expected_device}'"
