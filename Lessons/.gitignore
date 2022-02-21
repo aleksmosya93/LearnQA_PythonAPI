@@ -1,3 +1,4 @@
 .idea
 .pytest_cashe
 --pycashe__/
+logs/*
