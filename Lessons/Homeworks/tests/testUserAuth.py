@@ -1,7 +1,7 @@
 import requests
 import pytest
-from Homeworks.lib.basecase import BaseCase
-from Homeworks.lib.assertions import Assertions
+from Lessons.Homeworks.lib.basecase import BaseCase
+from Lessons.Homeworks.lib.assertions import Assertions
 
 class TestUserAuth(BaseCase):
     exclude_params = [

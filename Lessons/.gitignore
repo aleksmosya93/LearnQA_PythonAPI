@@ -1,4 +1,4 @@
-.idea
+../.idea
 .pytest_cashe
 --pycashe__/
-logs/*
+logs/log_2022-02-22_11-49-28.log
